@@ -1,3 +1,24 @@
+compra = input("Digite o código da compra: ")
+quantidade = int(input("Digite a quantidade: "))
+
+if compra == "100":
+    valor = quantidade*1.20
+elif compra == "101":
+    valor = quantidade*1.30
+elif compra == "102":
+    valor = quantidade*1.50
+elif compra == "103":
+    valor = quantidade*1.20
+elif compra == "104":
+    valor = quantidade*1.30
+elif compra == "105":
+    valor = quantidade*1.00
+else:
+    print("Código inválido!")
+
+print(f"O valor a ser pago é R${valor}")
+
+
 altura = float(input("Digite sua altura: "))
 sexo = input("Digite seu sexo para Masculino = M ou Feminino = F: ")
 
@@ -58,4 +79,3 @@ elif idade >=18:
     print("audulto")
 else:
     print("sem categoria")
-
