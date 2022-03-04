@@ -1,3 +1,21 @@
+saldo = int(input("Digite o saldo médio do último ano: "))
+
+if saldo <=200:
+    print("Sem crédito especial")
+elif saldo <=400:
+    cre_esp = (saldo*0.20)
+    print(f"Seu saldo médio é {saldo} e voce tem direito à {cre_esp} de saldo especial")
+elif saldo <=600:
+    cre_esp = (saldo*0.30)
+    print(f"Seu saldo médio é {saldo} e voce tem direito à {cre_esp} de saldo especial")
+elif saldo >600:
+    cre_esp = (saldo*0.40)
+    print(f"Seu saldo médio é {saldo} e voce tem direito à {cre_esp} de saldo especial")
+else:
+    print("erro tente novamente!")
+    
+
+
 compra = input("Digite o código da compra: ")
 quantidade = int(input("Digite a quantidade: "))
 
@@ -17,6 +35,7 @@ else:
     print("Código inválido!")
 
 print(f"O valor a ser pago é R${valor}")
+
 
 
 altura = float(input("Digite sua altura: "))
@@ -79,3 +98,4 @@ elif idade >=18:
     print("audulto")
 else:
     print("sem categoria")
+    
