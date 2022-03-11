@@ -1,3 +1,37 @@
+maior = 0 
+
+while True:
+    n = int(input("Digite um numero: "))
+    if n == 0 or n == 0.0:
+        break
+    if (n > maior):
+        maior = n
+
+print(f" {maior}.")
+
+
+quantidade = 0 
+
+while True:
+    n = int(input("Digite um numero: "))
+    if n == 0:
+        break
+    if n >= 100 and n <= 200:
+        quantidade += 1
+        
+print(f"Quantidade de numeros entre 100 e 200 foram {quantidade}.")
+
+
+negativo = 0
+
+for x in range(0,10):
+    voto = int(input("Digite um numero inteiro: "))
+    if (voto<0):
+        negativo += voto
+
+print(f"Soma dos negativos deu {negativo}")
+
+
 quantidade = 0 
 positivo = 0 
 negativo = 0 
