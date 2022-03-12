@@ -1,13 +1,94 @@
+num2 = num1 = 1
+resultado = 0
+
+for i in range(50):
+   resultado += num2 / num1
+   num2 += 2
+   num1 += 1
+print(resultado)
+
+
+n = int(input("Informe numero para tabuada: "))
+i = 0
+
+while i < 11:
+    print(f"{n} x {i} = {n * i}")
+    i += 1
+
+i=0
+
+while i < 10: 
+    i += 1
+    print(i) 
+    if i == 7: 
+        break
+
+c1 = 0
+c2 = 0
+c3 = 0
+c4 = 0
+
+while True:
+    n = int(input("Digite um número: "))
+    if n == 0:
+        break
+    if n >= 0 and n <= 25:
+        c1 += 1
+    elif n >= 26 and n <= 50:
+        c2 += 1
+    elif n >= 51 and n <= 75:
+        c3 += 1
+    elif n >= 76 and n <= 100:
+        c4 += 1
+    else:
+        print("Número errado")
+    
+print(f"\nA quantidade de números entre  0 e 25  é: {c1}")
+print(f"A quantidade de números entre 26 e 50  é: {c2}")
+print(f"A quantidade de números entre 51 e 75  é: {c3}")
+print(f"A quantidade de números entre 76 e 100 é: {c4}")
+
+
+quant_sal=0
+sal_soma=0
+sal_maior=0
+quant_fil=0
+fil_soma=0
+quant_pess=0
+
+while True:
+    salario = float(input("Digite seu salário: "))
+    if salario < 0.1:
+        break
+    quant_sal += 1 
+    sal_soma += salario
+    
+    filhos = int(input("Digite quantidade de filhos: "))
+    quant_fil += 1 
+    fil_soma += filhos
+    
+    if (salario>sal_maior):
+        sal_maior = salario
+        
+    if (salario<=100):
+        quant_pess += 1
+        
+print(f"\nMédia de salario é R${sal_soma/quant_sal:.2f}")
+print(f"Média de filhos são {fil_soma/quant_fil:.2f}")
+print(f"Salário maior foi R${sal_maior:.2f}")
+print(f"Quantidade de pessoas com salário menor à R$100 são: {quant_pess}")
+
+
 maior = 0 
 
 while True:
     n = int(input("Digite um numero: "))
-    if n == 0 or n == 0.0:
+    if n == -1:
         break
     if (n > maior):
         maior = n
 
-print(f" {maior}.")
+print(f"O número digitado maior é {maior}.")
 
 
 quantidade = 0 
