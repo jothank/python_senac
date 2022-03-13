@@ -1,3 +1,37 @@
+alt_maior = 0 
+alt_menor = 999
+quantidade = 0
+media = 0
+
+for x in range(0,15):
+    altura = float(input("Digite sua altura: "))
+    if altura < 0:
+        break
+    quantidade +=1 
+    media += altura
+    
+    if (altura > alt_maior):
+        alt_maior = altura
+        
+    if (altura < alt_menor):
+        alt_menor = altura
+
+print(f"A altura maior foi: {alt_maior:.2f}")
+print(f"A altura menor foi: {alt_menor:.2f}").
+print(f"A média das alturas foram: {media/altura:.2f}")
+
+
+soma = 0
+conta = 0 
+
+for n in range(1,501,2):
+    if n % 3 == 0:
+        soma += n
+        conta += 1
+        
+print(f"Os numeros são {conta} e a soma é {soma}")
+
+
 num2 = num1 = 1
 resultado = 0
 
