@@ -1,3 +1,28 @@
+soma=0
+quantidade=0
+negativo=0 
+positivo=0 
+
+while True:
+    n = float(input("Digite nota: "))
+    if n == 0:
+        break
+    quantidade += 1 
+    soma += n
+    
+    if n > 0:
+        positivo +=1
+        
+    if n < 0:
+        negativo +=1
+        
+print(f"\nMédia aritmética é: {soma/quantidade:.2f}")
+print(f"Quantidade de numeros positivos são: {positivo:.0f}")
+print(f"Quantidade de numeros negativos são: {negativo:.0f}")
+print(f"Porcentagem de positivos são: {(positivo/quantidade)*100}%")
+print(f"Porcentagem de negativos são: {(negativo/quantidade)*100}%")
+
+
 alt_maior = 0 
 alt_menor = 999
 quantidade = 0
