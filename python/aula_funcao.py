@@ -1,5 +1,11 @@
 import funcao
 
+salario_colab = float(input("Digite valor da venda: "))
+resulta = funcao.salario_colaborador(salario_colab)
+
+produto = float(input("Digite o preço: "))
+resultado = funcao.produto(produto)
+
 litro = int(input("Digite a quantidade de litros: "))
 resultado = funcao.tonel(litro)
 
