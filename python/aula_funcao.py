@@ -1,5 +1,11 @@
 import funcao
 
+calc_tabuada = int(input(
+    "Digite um numero para tabuado por padrão é tabuadax10, caso não queria digite -1: "))
+num_tabuada = int(input("Tabuada inicia em: "))
+num_quantidade = int(input("Tabuada finaliza em: "))
+resultado = funcao.tabuada(calc_tabuada, num_tabuada, num_quantidade)
+
 salario_colab = float(input("Digite valor da venda: "))
 resulta = funcao.salario_colaborador(salario_colab)
 
