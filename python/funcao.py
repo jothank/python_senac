@@ -44,3 +44,8 @@ def salario_colaborador(comissao: float):
     salario_final = salario+comissao_final
     print(comissao_final)
     print(salario_final)
+
+
+def tabuada(numero, start=1, end=11):
+    for i in range(start, end):
+        print(f"{numero} x {i} = {numero*i}")
