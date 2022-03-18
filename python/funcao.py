@@ -31,3 +31,16 @@ def tonel(litros: int):
     print("quantidade de litros é: ", litros, "litros")
     print("quantidade de agua que precisa é: ", agua, "litros")
     print("quantidade de suco de maracuja que precisa é: ", maracuja, "litros")
+
+
+def produto(preço: float):
+    valor = preço-(preço*0.10)
+    print(valor)
+
+
+def salario_colaborador(comissao: float):
+    salario = 1000
+    comissao_final = (comissao*0.04)+comissao
+    salario_final = salario+comissao_final
+    print(comissao_final)
+    print(salario_final)
