@@ -4,7 +4,7 @@ class Profissoes():
         self.nome_empregado = nome_empregado
         self.salario = salario
         self.hora_por_dia = hora_por_dia
-        self.cargo = None
+        self.cargo = str
         self.sexo = None
         self.hora_extra = 0
         self.salario_anual = 0
@@ -12,7 +12,31 @@ class Profissoes():
 
     def programa(self):
         self.nome_empregado = input('Digite o nome do empregador: ')
-        self.salario_mensal = float(input('Digite Salario: '))         
+        self.salario_mensal = float(input('Digite Salario R$'))  
+
+    def horas_extras_mes(self):
+        self.valor_horas_extras = (self.salario_mensal/220)*0.5+(self.salario_mensal/220)
+        print(f'Você irá ganhar R${self.valor_horas_extras:.2f} por horas em horas extras conforme salario mensal R${self.salario_mensal:.2f}')  
+
+    def selecionar_cargo_bonificacao(self):
+        self.cargo = input('Selecione cargo 1 - Suporte, 2 - Professor, 3 - Programador, 4 - Gerente ou 5 - Analista: ')     
+        if self.cargo == '1':
+            self.bonificacao = self.salario_mensal*0.1
+            print(f'Bonificação de 10% que você receberá como Suporte é R${self.bonificacao:.2f} conforme salario mensal de R${self.salario_mensal:.2f}')
+        elif self.cargo == '2':
+            self.bonificacao = self.salario_mensal*0.15
+            print(f'Bonificação de 15% que você receberá como Professor é R${self.bonificacao:.2f} conforme salario mensal de R${self.salario_mensal:.2f}')
+        elif self.cargo == '3':
+            self.bonificacao = self.salario_mensal*0.2
+            print(f'Bonificação de 20% que você receberá como Programador é R${self.bonificacao:.2f} conforme salario mensal de R${self.salario_mensal:.2f}')
+        elif self.cargo == '4':
+            self.bonificacao = self.salario_mensal*0.3
+            print(f'Bonificação de 30% que você receberá como Gerente é R${self.bonificacao:.2f} conforme salario mensal de R${self.salario_mensal:.2f}')
+        elif self.cargo == '5':
+            self.bonificacao = self.salario_mensal*0.15
+            print(f'Bonificação de 15% que você receberá como Analista é R${self.bonificacao:.2f} conforme salario mensal de R${self.salario_mensal:.2f}')
+        else:
+            print('Erro! digite um numero de cargo correto')
 
     def horas_mes(self): 
         self.hora_por_dia = float(input('Digite quantidade de horas por dia 8, 6 ou 4: '))  
@@ -43,12 +67,3 @@ class Profissoes():
         else:
             print('Erro! digite o sexo correto')     
  
-'''
-     def horas_extras_mes(self):
-        self.quant_he = float(input("Digite a quantidade de horas extras mês: "))
-        self.quant_he = self.quant_he*
-
-    def aumento_salario(self):
-        self.salario_aumento = (self.salario_mensal*0.10)+self.salario_mensal
-        print(f'O salário do mês com aumento de 10% será {self.salario_aumento}')
-'''
