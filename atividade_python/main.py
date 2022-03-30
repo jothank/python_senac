@@ -1,16 +1,53 @@
-from profissoes import Profissoes
+from __medico import Medico
+from __enfermeiro import Enfermeiro
+from __cirurgiao import Cirurgiao
+from __recepcionista import Recepcionista
+from __anestesista import Anestesista
 
+medico = Medico('Jonathan',1000,8,'1','M')
+enfermeiro = Enfermeiro('Thiago',900,6,'2','M')
+cirurgiao = Cirurgiao('Hellen',2000,4,'3','F')
+recepcionista = Recepcionista('Pedro',1200,6,'4','M')
+anestesista = Anestesista('Mara',1800,8,'5','F')
 
-programa = Profissoes('', '', 0)
-
-programa.programa()
-
-programa.horas_extras_mes()
-
-programa.selecionar_cargo_bonificacao()
-
-programa.horas_mes()
-
-programa.sal_anual()
-
-programa.quant_horas_anos()
+print('')
+medico.nomeEmpregado()
+medico.salarioMensal()
+medico.horas_extras_mes()
+medico.selecionar_cargo_bonificacao()
+medico.horas_mes()
+medico.sal_anual()
+medico.quant_horas_anos()
+print('')
+enfermeiro.nomeEmpregado()
+enfermeiro.salarioMensal()
+enfermeiro.horas_extras_mes()
+enfermeiro.selecionar_cargo_bonificacao()
+enfermeiro.horas_mes()
+enfermeiro.sal_anual()
+enfermeiro.quant_horas_anos()
+print('')
+anestesista.nomeEmpregado()
+anestesista.salarioMensal()
+anestesista.horas_extras_mes()
+anestesista.selecionar_cargo_bonificacao()
+anestesista.horas_mes()
+anestesista.sal_anual()
+anestesista.quant_horas_anos()
+print('')
+cirurgiao.nomeEmpregado()
+cirurgiao.salarioMensal()
+cirurgiao.horas_extras_mes()
+cirurgiao.selecionar_cargo_bonificacao()
+cirurgiao.horas_mes()
+cirurgiao.sal_anual()
+cirurgiao.quant_horas_anos()
+print('')
+recepcionista.nomeEmpregado()
+recepcionista.salarioMensal()
+recepcionista.horas_extras_mes()
+recepcionista.selecionar_cargo_bonificacao()
+recepcionista.horas_mes()
+recepcionista.sal_anual()
+recepcionista.quant_horas_anos()
+print('')
