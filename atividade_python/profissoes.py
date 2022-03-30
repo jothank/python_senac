@@ -10,9 +10,11 @@ class Profissoes():
         self.salario_anual = 0
         self.bonificacao = 0
 
-    def programa(self):
-        self.nome_empregado = input('Digite o nome do empregador: ')
-        self.salario_mensal = float(input('Digite Salario R$'))  
+    def nomeEmpregado(self):
+        self.nome_empregado = input('Digite o nome do empregador: ')         
+
+    def salarioMensal(self):
+        self.salario_mensal = float(input('Digite Salario R$')) 
 
     def horas_extras_mes(self):
         self.valor_horas_extras = (self.salario_mensal/220)*0.5+(self.salario_mensal/220)
