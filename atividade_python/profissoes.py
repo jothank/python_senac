@@ -97,4 +97,5 @@ class Profissoes():
         elif self.hora_por_dia == 4:
             print(f'Funcionario não terá direito a almoço')
         else:
-            print('Erro! digite a quantidade de horas dia correta')
+            print('Erro! digite a quantidade de horas dia correta') 
+            
