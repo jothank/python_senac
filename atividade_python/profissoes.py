@@ -7,23 +7,27 @@ class Profissoes():
         self.cargo = cargo
         self.sexo = sexo
         self.valor_horas_extras = 0
+        self.valor_horas_falta = 0
         self.salario_anual = 0
         self.bonificacao = 0
 
     def nomeEmpregado(self):
-        ##self.nome_empregado = input('Digite o nome do empregador: ')  
-        print(f'Nome do funcionario é {self.nome_empregado}')       
+        ##self.nome_empregado = input('Digite o nome do empregador: ')
+        print(f'Nome do funcionario é {self.nome_empregado}')
 
     def salarioMensal(self):
-        ##self.salario = float(input('Digite Salario R$')) 
+        ##self.salario = float(input('Digite Salario R$'))
         print(f'Salário é {self.salario}')
 
-    def horas_extras_mes(self):
+    def horas_faltas(self):
+        self.valor_horas_falta = (self.salario/220)
+
+    def hroas_extras(self):
         self.valor_horas_extras = (self.salario/220)*0.5+(self.salario/220)
-        print(f'Ganhará R${self.valor_horas_extras:.2f} por horas em horas extras conforme salario mensal R${self.salario:.2f}')  
+        print(f'Ganhará R${self.valor_horas_extras:.2f} por horas em horas extras conforme salario mensal R${self.salario:.2f}')
 
     def selecionar_cargo_bonificacao(self):
-        ##self.cargo = input('Selecione cargo 1 - Anestesista, 2 - Cirurgiao, 3 - Enfermeiro, 4 - Médico ou 5 - Recepcionista: ')     
+        ##self.cargo = input('Selecione cargo 1 - Anestesista, 2 - Cirurgiao, 3 - Enfermeiro, 4 - Médico ou 5 - Recepcionista: ')
         if self.cargo == '1':
             self.bonificacao = self.salario*0.1
             print(f'Bonificação é 10% receberá como Suporte é R${self.bonificacao:.2f} conforme salario mensal de R${self.salario:.2f}')
@@ -42,8 +46,8 @@ class Profissoes():
         else:
             print('Erro! digite um numero de cargo correto')
 
-    def horas_mes(self): 
-        ##self.hora_por_dia = float(input('Digite quantidade de horas por dia 8, 6 ou 4: '))  
+    def horas_mes(self):
+        ##self.hora_por_dia = float(input('Digite quantidade de horas por dia 8, 6 ou 4: '))
         if self.hora_por_dia == 8:
             self.quant_horas_mes = 220
             print(f'Horas mês será 220:00')
@@ -66,7 +70,7 @@ class Profissoes():
             self.calcula_horas_anos_30 = (self.hora_por_dia*365)*30
             print(f'Quantidade de horas trabalhada quando possuir 30 anos será {self.calcula_horas_anos_30:.2f} horas, considerando {self.hora_por_dia:.2f} horas dia.')
         elif self.sexo == 'F' or self.sexo == 'f':
-            self.calcula_horas_anos_25 = (self.hora_por_dia*365)*25        
+            self.calcula_horas_anos_25 = (self.hora_por_dia*365)*25
             print(f'Quantidade de horas trabalhada quando possuir 25 anos será {self.calcula_horas_anos_25:.2f} horas, considerando {self.hora_por_dia:.2f} horas dia.')
         else:
-            print('Erro! digite o sexo correto')     
+            print('Erro! digite o sexo correto')
