@@ -6,7 +6,7 @@ class Profissoes():
         self.hora_por_dia = hora_por_dia
         self.cargo = cargo
         self.sexo = sexo
-        self.hora_extra = 0
+        self.valor_horas_extras = 0
         self.salario_anual = 0
         self.bonificacao = 0
 
