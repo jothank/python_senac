@@ -21,6 +21,7 @@ class Profissoes():
 
     def horas_faltas(self):
         self.valor_horas_falta = (self.salario/220)
+        print(f'O valor de uma falta dia é R${self.valor_horas_falta:.2f}')
 
     def horas_extras(self):
         self.valor_horas_extras = (self.salario/220)*0.5+(self.salario/220)
