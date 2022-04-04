@@ -42,7 +42,7 @@ for x in range(0,15):
         alt_menor = altura
 
 print(f"A altura maior foi: {alt_maior:.2f}")
-print(f"A altura menor foi: {alt_menor:.2f}").
+print(f"A altura menor foi: {alt_menor:.2f}")
 print(f"A média das alturas foram: {media/altura:.2f}")
 
 
